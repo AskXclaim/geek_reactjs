@@ -3,8 +3,10 @@ export type ReactLabelProps = {
     forElement: string;
 };
 const ReactLabel = ({text, forElement}: ReactLabelProps) => {
-    return (
-        <label className="label" htmlFor={forElement}>{text}</label>
-    );
+
+    if (forElement) {
+        return (<label className="label" htmlFor={forElement}>{text}</label>);
+    }
+    return (<label className="label">{text}</label>);
 }
 export default ReactLabel;

@@ -9,7 +9,7 @@ const ReactRadioButtonWithLabel = ({name, text}: RadioButtonWithLabelProps) => {
     return (
         <div className="radiobutton_with_label-container">
             <ReactRadioButton name={name}/>
-            <ReactLabel text={text} forElement={name}/>
+            <ReactLabel text={text} forElement=""/>
         </div>
     )
 }

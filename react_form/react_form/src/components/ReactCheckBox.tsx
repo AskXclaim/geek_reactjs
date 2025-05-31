@@ -4,7 +4,7 @@ export type ReactCheckBoxProps = {
 }
 const ReactCheckBox = ({name}:ReactCheckBoxProps) => {
     return (
-      <input name={name} type="checkbox" />
+      <input id={name} name={name} type="checkbox" />
     );
 };
 export default ReactCheckBox;
